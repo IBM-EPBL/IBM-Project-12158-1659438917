@@ -80,9 +80,9 @@ def predict():
     prediction = model.predict(con_features)
     print(prediction)
     if prediction==1:
-        return render_template('approve.html',prediction_text ='Congratulations! '+name+' You are eligible for loan')
+        return render_template('approve.html',prediction_text ='Congratulations! '+name+' Your Loan is Approved')
     else:
-        return render_template('reject.html',prediction_text ='Sorry '+name+' You are not eligible for loan')
+        return render_template('reject.html',prediction_text ='Sorry '+name+' Your Loan is Denied')
 
 
 if __name__ == "__main__":
