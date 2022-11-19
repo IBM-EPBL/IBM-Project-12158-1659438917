@@ -1,7 +1,7 @@
 import requests
 import json
 # NOTE: you must manually set API_KEY below using information retrieved from your IBM Cloud account.
-API_KEY - " "
+API_KEY - "GAUNr8ZLGwNbm-g4suDTHyjmV4uRDdjuG0-xd0G_3eG2"
 token_response = requests.post (https://iam.ng.bluemix.net/identitv/token', data-{"apikey": API_KEY, "grant_type":
 mItoken = token_response. json() ["access_token"]
 print ("mltoken", mItoken)
@@ -19,7 +19,7 @@ payload_scoring - {"input_data": [ ("field": [["GI",
 "values": [[1, 0, 0, 68600,
 1, 320000, 600000, 0,
 20000, 1000000, 1000000, 1790932]131}
-response_scoring - requests.post https://us-south.ml.cloud.ibm.com/ml/va/deployments/27e1d215-f1e7-4920-b750-5d6d9599a31f
+response_scoring - requests.post https://us-south.ml.cloud.ibm.com/ml/va/deployments/a0d8e0b0-f67e-4613-81f3-9b370a2c4459
 print("Scoring response")
 predictions = response_scoring.json()
 print(predictions[ 'predictions '[el[ 'values '1[01[81)
